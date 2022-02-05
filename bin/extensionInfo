@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+const { program } = require("commander");
+const pkg = require("../package.json");
+
+program.version(pkg.version, "-v,--version");
+
+program
+  .argument("<extension>", "file name")
+  .description("get extension info")
+  .usage("<extension>")
+  .action((extension) => {
+    console.log(require("../index").get(extension));
+  });
+
+program
+  .command("list")
+  .alias("ls")
+  .description("show list of extensions")
+  .action(() => {
+    require("../index").list.forEach((v) => console.log(v));
+  });
+program.parse(process.argv);

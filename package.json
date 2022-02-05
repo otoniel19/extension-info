@@ -1,0 +1,23 @@
+{
+  "name": "extension-info",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@otoniel19/logger": "^1.0.1",
+    "commander": "^9.0.0"
+  },
+  "types": "./dist",
+  "devDependencies": {
+    "@types/node": "^17.0.15"
+  },
+  "bin": {
+    "extensionInfo": "./bin/extensionInfo"
+  }
+}
