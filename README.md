@@ -3,7 +3,7 @@
 - usage
 
 ```js
-  const extensionInfo = require("extensionInfo")
+  const extensionInfo = require("extension-info")
   extensionInfo.get(".js") => { name: 'JavaScript' , extension: ".js" }
 
 	//get list
